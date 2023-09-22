@@ -1,6 +1,6 @@
 # Temperatures Converter
-Application for converting temperatures
-COMPILE THE APP WITH QTCREATOR TO USE IT
+- Application for converting temperatures
+- COMPILE THE APP WITH QTCREATOR TO USE IT
 
 ## Features
 
