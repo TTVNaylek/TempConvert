@@ -22,6 +22,9 @@ private slots:
 
     void on_ComboBox_currentIndexChanged();
 
+
+    void on_lineEditSaisie_returnPressed();
+
 private:
     Ui::tempConvert *ui;
     QString textValue;

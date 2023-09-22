@@ -16,11 +16,12 @@ tempConvert::~tempConvert()
     delete ui;
 }
 
+
 //Slot of convert button
 //Manages conversion and display
 void tempConvert::on_Convert_clicked()
 {
-    //get the text from the line edit
+    //Get the text from the line edit
     textValue = ui->lineEditSaisie->text();
     double degreeValue = textValue.toDouble();
 
@@ -75,13 +76,19 @@ void tempConvert::on_Convert_clicked()
     }
 }
 
+//Get the last result and send it to the label fot the conversion
 void tempConvert::on_ComboBox_currentIndexChanged()
 {
-    //Get the last result and send it to the label fot the conversion
     ui->lineEditSaisie->setText(ui->result->text());
-
 }
 
+//When the key enter is pressed it calls the function on_Convert_clicked()
+void tempConvert::on_lineEditSaisie_returnPressed()
+{
+    this->on_Convert_clicked();
+}
+
+//Leave the application
 void tempConvert::on_Leave_clicked()
 {
     QWidget::close();
