@@ -20,6 +20,8 @@ private slots:
 
     void on_Leave_clicked();
 
+    void on_ComboBox_currentIndexChanged();
+
 private:
     Ui::tempConvert *ui;
     QString textValue;
